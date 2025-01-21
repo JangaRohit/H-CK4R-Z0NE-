@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>H@CK4R Z0NE</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="images/favicon.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="cards.js" type="text/javascript"></script>
+    <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
+</head>
+
+  <body>
+
+    <div class="top-left-buttons">
+      <a href="login/login.html" class="login-button">Login</a>
+      <a href="levels/selector.html" class="selector-button">Select Level</a>
+      <a href="rules/rules.html" class="rules-button">Rules</a>
+      <button onclick="goBack()">Go Back</button> </div>
+    </div>
+    
+    <div class="game-board">
+
+      <div class="hacker-area">
+
+        <h1>
+          <br/> <strong>H@CK4R Z0NE</strong>
+        </h1>
+
+        <div class="stats hacker-stats">
+          <div class="life-bar">
+            <div class="life-left hacker-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <div class="thumbnail">😈</div>
+          <div class="name">Hacker</div>
+        </div>
+        
+        <div class="card hacker-card hacker-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+      </div>
+
+      <div class="player-area">
+
+        <div class="stats player-stats">
+          <div class="life-bar">
+            <div class="life-left player-color"></div>
+          </div>
+          <div class="life-total"></div>
+          <div class="thumbnail">🤫</div>
+          <div class="name">You</div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <div class="card player-card player-color">
+          <div class="text"></div>
+          <div class="power"></div>
+        </div>
+
+        <button class="start-game" onClick="startGame()">Play the Game!</button>
+        <button class="next-turn" onClick="playTurn()">Next!</button>
+      </div>
+    </div>
+
+
+
+    <div class="winner-section">
+      <div>
+        <span class="winner-message">You got hacked!</span>
+        <button class="restart" onClick="location.reload()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="scripts/script.js" type="text/javascript"></script>
+
+  </body>
+</html>

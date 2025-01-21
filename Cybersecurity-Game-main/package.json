@@ -1,0 +1,14 @@
+{
+    "name": "hack4r-z0ne",
+    "version": "1.0.0",
+    "description": "A Cybersecurity Game",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "build": "echo 'Building H@CK4R Z0NE...'"
+    },
+    "devDependencies": {
+      "electron": "^27.0.0"
+    }
+  }
+  

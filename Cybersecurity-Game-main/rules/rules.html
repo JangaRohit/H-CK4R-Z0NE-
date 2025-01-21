@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rules - H@CK4R Z0NE</title>
+    <link rel="stylesheet" href="rules.css">
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="top-left-buttons">
+            <a href="../login/login.html" class="login-button">Login</a>
+            <a href="../levels/selector.html" class="selector-button">Select Level</a>
+            <button onclick="goBack()">Go Back</button> </div>
+
+        </div>
+        <h1>Rules of H@CK4R Z0NE</h1>
+        <p>The objective of the game is to defeat the hacker by reducing their health to 0 or below. You do this by selecting the correct card to counter the hacker's attack.</p>
+
+        <section>
+            <h2>Gameplay</h2>
+            <p>Each round, the hacker will present an attack card with a power level. You have three defense cards to choose from, each with its own power level.</p>
+            <p>Select the defense card you believe is the strongest counter to the hacker's attack.</p>
+            <ul>
+                <li>If your chosen card's power level is HIGHER than the hacker's, you deal damage equal to the difference to the hacker. You successfully defended the attack!</li>
+                <li>If your chosen card's power level is LOWER than the hacker's, the hacker deals damage equal to the difference to you. You were hacked!</li>
+                <li>If the power levels are equal, it's a tie, and no damage is dealt.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Winning and Losing</h2>
+            <p>The game continues until either your health or the hacker's health reaches 0 or below.</p>
+            <ul>
+                <li>If the hacker's health reaches 0 or below first, you win!</li>
+                <li>If your health reaches 0 or below first, you lose.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
